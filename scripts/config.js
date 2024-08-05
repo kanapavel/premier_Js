@@ -1,0 +1,3 @@
+// tableaux de listes des mots et des phrases du jeu
+const listeMots = ["Apprentissage","Confiance","Motivation","Succes","Culture","Victoire","Evolution","Voiture","arc-en-ciel"," Sagesse"]
+const listePhrases = ["UX design, penser utilisateur.","Débogage, patience et logique.","Le trading est une activite speculative","Apprends de tes erreurs.","Aime-toi tel que tu es","Entoure-toi de personnes positives.","Réponse API, clé du succès.","JavaScript, mon meilleur ami.","Git, pour ne rien oublier.","La vie est belle, profite-en."]
