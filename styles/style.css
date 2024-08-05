@@ -1,0 +1,347 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: white;  
+}
+
+/* Mise en forme des titres */
+h1 {
+    margin: 10px;
+    font-size: 60px;
+    font-weight: 900;
+    background: linear-gradient(to right ,#c0d6fd 10%,white 50%,#abb9d4);
+    background-size: auto auto;
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    display: inline-block;
+    color: white;
+    animation: animate2 3s linear infinite;
+}
+@keyframes animate2 {
+    to{
+        background-position: 200% center;
+    }
+}
+h2 {
+    margin: 10px;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+h3 {
+    margin: 10px;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+/* Mise en forme des formulaires */
+input[type='radio'] {
+    filter: rgb(107, 107, 243); /* Grayscale passe le bouton en niveau de gris */
+}
+
+
+input[type='text'],
+input[type='email'] {
+    width: 100%;
+    margin-right: 10px;
+    padding: 5px;
+    border: none;
+    border-radius: 8px;
+    font-size: 17px;
+    font-weight: 600;
+    font-size: 17px;
+    color: rgb(11, 45, 117);
+}
+
+input[type='text']::placeholder,
+input[type='email']::placeholder {
+    color: rgb(11, 45, 117);
+    opacity: 50%;
+}
+
+button {
+    padding: 5px;
+    border-radius: 8px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 17px;
+    color: white;
+    border: 1px solid rgb(107, 107, 243);
+    background-color: transparent;
+    transition: .5s all ease;
+}
+
+button:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+button:focus {
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid rgb(247, 247, 250);
+    padding: 3px;
+    
+}
+
+/**
+ * Eléments principaux
+ */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif; 
+    background: black;
+}
+
+.box ul li{
+    list-style: none;
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    opacity: 0;
+    border-radius: 5%;
+    background-color: rgb(106, 78, 172);
+    box-shadow: 0px 0px 23px rgba(162, 162, 250, 0.753);
+    animation: animate 12s linear infinite;
+    z-index: -1;
+}
+
+.box ul li:nth-child(2){
+    left: 5vw;
+    animation-delay: 1s;
+}
+.box ul li:nth-child(3){
+    left: 20vw;
+    animation-delay: 4s;
+}
+.box ul li:nth-child(4){
+    left: 30vw;
+    animation-delay: 2s;
+}
+.box ul li:nth-child(5){
+    left: 40vw;
+    animation-delay: 5s;
+}
+.box ul li:nth-child(6){
+    left: 55vw;
+    animation-delay: 3s;
+}
+.box ul li:nth-child(7){
+    left: 60vw;
+    animation: 4s;
+}
+.box ul li:nth-child(8){
+    left: 70vw;
+    animation-delay: 1s;
+}
+.box ul li:nth-child(9){
+    left: 80vw;
+    animation-delay: 3s;
+}
+.box ul li:nth-child(10){
+    left: 90vw;
+    animation-delay: 5s;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    min-width: 200px;
+    margin-bottom: 50px;
+    padding: 50px;
+    text-align: center;
+    color: white;
+    font-size: 17px;
+    font-weight: 500;
+    border-radius: 30px;
+    border: 2px solid rgb(107, 107, 243);
+}
+
+footer {
+    position: sticky;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 30px;
+    font-weight: 600;
+    font-size: 17px;
+    color: white;
+    background: linear-gradient(to bottom, #000000, #3a2f64);
+}
+
+/**
+ * Mise en forme des éléments de la zone principale
+ */
+
+/* Zone d'options */
+.optionSource {
+    margin: 20px;
+}
+
+.optionSource input[type='radio']:not(:first-child) {
+    margin-left: 20px;
+}
+
+/* Zone ou sera affiché le texte (mot ou phrase) à afficher */
+.zoneProposition {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 10px 0 10px 0;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: white;
+    font-size: 30px;
+    font-weight: 600;
+    color: rgb(11, 45, 117);
+}
+
+/* Zone de saisie */
+.zoneSaisie {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+/* Eléments du formulaire de saisie */
+.zoneSaisie input[type='text'] {
+    width: 80%;
+    outline-color: rgb(150, 150, 248);
+}
+
+.zoneSaisie button {
+    width: 20%;
+}
+
+.zoneScore {
+    font-size: 20px;
+}
+
+.zonePartage {
+    display: flex;
+    gap: 20px;
+    padding-top: 20px;
+}
+
+/**
+  * Gestion des popups
+  */
+
+.popupBackground {
+    display: none;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.678);
+}
+
+.popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    font-size: 17px;
+    font-weight: 500;
+    border-radius: 30px;
+    border: 2px solid rgb(107, 107, 243);
+    background: linear-gradient(to bottom, #000000, #3a2f64);
+    z-index: 1;
+}
+
+
+
+.active {
+    display: flex;
+}
+
+.popup p {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.popup div {
+    font-size: 25px;
+    padding : 5px;
+    padding-bottom: 15px;
+}
+
+/* Eléments de formulaire */
+.popup input {
+    margin: 15px 0;
+    border: none;
+    outline-color: rgb(211, 212, 243);
+}
+
+.popup button {
+    margin: 5px;
+}
+
+/** 
+ * Responsive
+ */
+
+
+ /* En dessous de 1200 px */
+@media screen and (max-width: 1200px) {
+    main {
+        width: 60%;
+        padding: 30px;
+    }
+}
+
+
+/* En dessous de 800 px */
+@media screen and (max-width: 800px) {
+    main {
+        width: 90%;
+        padding: 10px;
+    }
+    header{
+        width: 85%;
+        text-align: center;
+    }
+    h1{
+        font-size: 50px;
+    }
+}
+
+@keyframes animate{
+    0%{
+        transform: rotate(360deg) ;
+        opacity: 1;
+        bottom: 0;
+    }
+    100%{
+        transform:scale(1.5);
+        bottom: 100vh;
+        border-radius: 50%;
+    }
+}
